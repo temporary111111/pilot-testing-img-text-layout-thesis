@@ -1,0 +1,52 @@
+{
+  "pilot_id": "DVP_317_06f5a62c28d9",
+  "relative_path": "Data/CommercialPosters/0_real/5d2365a58cba87f94353decc_preview.jpg",
+  "status": "ok",
+  "error": null,
+  "image_width": 1024,
+  "image_height": 576,
+  "num_regions": 2,
+  "runtime_seconds": 0.11739719999968656,
+  "polygons": [
+    [
+      [
+        228.0,
+        305.0
+      ],
+      [
+        478.0,
+        305.0
+      ],
+      [
+        478.0,
+        327.0
+      ],
+      [
+        228.0,
+        327.0
+      ]
+    ],
+    [
+      [
+        224.0,
+        232.0
+      ],
+      [
+        496.0,
+        232.0
+      ],
+      [
+        496.0,
+        303.0
+      ],
+      [
+        224.0,
+        303.0
+      ]
+    ]
+  ],
+  "scores": [
+    0.9083221231225979,
+    0.9546308143353816
+  ]
+}

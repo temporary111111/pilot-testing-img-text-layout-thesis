@@ -1,0 +1,353 @@
+{
+  "features": "C:\\Users\\dev\\Desktop\\feasibility-testing-thesis\\feature_pilot_expanded_v0\\layout_features.csv",
+  "images": 268,
+  "categories": [
+    "AcademicPosters",
+    "CommercialPosters",
+    "InfographicCharts",
+    "Receipts",
+    "Tables",
+    "UIScreenshots"
+  ],
+  "label_counts": {
+    "0": 134,
+    "1": 134
+  },
+  "feature_groups": {
+    "quantity_only": [
+      "region_count",
+      "union_coverage_norm",
+      "sum_box_area_norm",
+      "mean_box_area_norm",
+      "median_box_area_norm",
+      "std_box_area_norm",
+      "mean_box_width_norm",
+      "mean_box_height_norm",
+      "mean_confidence",
+      "low_confidence_fraction"
+    ],
+    "arrangement_only": [
+      "center_x_mean",
+      "center_x_std",
+      "center_y_mean",
+      "center_y_std",
+      "center_x_span",
+      "center_y_span",
+      "nearest_neighbor_mean_norm",
+      "nearest_neighbor_median_norm",
+      "nearest_neighbor_std_norm",
+      "pairwise_distance_mean_norm",
+      "pairwise_distance_std_norm",
+      "row_alignment_fraction",
+      "column_alignment_fraction",
+      "angle_mean_abs_deg",
+      "angle_std_deg",
+      "rotated_fraction_gt_5deg",
+      "center_grid_0_0",
+      "center_grid_0_1",
+      "center_grid_0_2",
+      "center_grid_0_3",
+      "center_grid_1_0",
+      "center_grid_1_1",
+      "center_grid_1_2",
+      "center_grid_1_3",
+      "center_grid_2_0",
+      "center_grid_2_1",
+      "center_grid_2_2",
+      "center_grid_2_3",
+      "center_grid_3_0",
+      "center_grid_3_1",
+      "center_grid_3_2",
+      "center_grid_3_3"
+    ],
+    "quantity_plus_arrangement": [
+      "region_count",
+      "union_coverage_norm",
+      "sum_box_area_norm",
+      "mean_box_area_norm",
+      "median_box_area_norm",
+      "std_box_area_norm",
+      "mean_box_width_norm",
+      "mean_box_height_norm",
+      "mean_confidence",
+      "low_confidence_fraction",
+      "center_x_mean",
+      "center_x_std",
+      "center_y_mean",
+      "center_y_std",
+      "center_x_span",
+      "center_y_span",
+      "nearest_neighbor_mean_norm",
+      "nearest_neighbor_median_norm",
+      "nearest_neighbor_std_norm",
+      "pairwise_distance_mean_norm",
+      "pairwise_distance_std_norm",
+      "row_alignment_fraction",
+      "column_alignment_fraction",
+      "angle_mean_abs_deg",
+      "angle_std_deg",
+      "rotated_fraction_gt_5deg",
+      "center_grid_0_0",
+      "center_grid_0_1",
+      "center_grid_0_2",
+      "center_grid_0_3",
+      "center_grid_1_0",
+      "center_grid_1_1",
+      "center_grid_1_2",
+      "center_grid_1_3",
+      "center_grid_2_0",
+      "center_grid_2_1",
+      "center_grid_2_2",
+      "center_grid_2_3",
+      "center_grid_3_0",
+      "center_grid_3_1",
+      "center_grid_3_2",
+      "center_grid_3_3"
+    ]
+  },
+  "density_matching_applied": true,
+  "density_pairs_source": "C:\\Users\\dev\\Desktop\\feasibility-testing-thesis\\feature_pilot_expanded_v0\\analysis\\density_matched_pairs.csv",
+  "max_count_difference": 10,
+  "selected_pairs": 134,
+  "selected_images": 268,
+  "images_before_filter": 600,
+  "cross_validation": "5-fold stratified nearest-centroid; standardization fitted within each training fold",
+  "pooled_cv_mean_balanced_accuracy": {
+    "quantity_only": 0.7695156695156695,
+    "arrangement_only": 0.5713675213675213,
+    "quantity_plus_arrangement": 0.7396011396011397
+  },
+  "top_within_category_effects": [
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "mean_confidence",
+      "real_mean": 0.818955490886699,
+      "fake_mean": 0.8580760864784029,
+      "cohen_d_fake_minus_real": 2.259248824219294,
+      "absolute_cohen_d": 2.259248824219294
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_only",
+      "feature": "mean_confidence",
+      "real_mean": 0.818955490886699,
+      "fake_mean": 0.8580760864784029,
+      "cohen_d_fake_minus_real": 2.259248824219294,
+      "absolute_cohen_d": 2.259248824219294
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_only",
+      "feature": "low_confidence_fraction",
+      "real_mean": 0.23187816027009034,
+      "fake_mean": 0.09521880594682322,
+      "cohen_d_fake_minus_real": -2.047926027561322,
+      "absolute_cohen_d": 2.047926027561322
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "low_confidence_fraction",
+      "real_mean": 0.23187816027009034,
+      "fake_mean": 0.09521880594682322,
+      "cohen_d_fake_minus_real": -2.047926027561322,
+      "absolute_cohen_d": 2.047926027561322
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_only",
+      "feature": "sum_box_area_norm",
+      "real_mean": 0.31593938787680975,
+      "fake_mean": 0.21816731256548,
+      "cohen_d_fake_minus_real": -1.706412456706544,
+      "absolute_cohen_d": 1.706412456706544
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "sum_box_area_norm",
+      "real_mean": 0.31593938787680975,
+      "fake_mean": 0.21816731256548,
+      "cohen_d_fake_minus_real": -1.706412456706544,
+      "absolute_cohen_d": 1.706412456706544
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "union_coverage_norm",
+      "real_mean": 0.30831127477014414,
+      "fake_mean": 0.2159116360322351,
+      "cohen_d_fake_minus_real": -1.7004575251432765,
+      "absolute_cohen_d": 1.7004575251432765
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_only",
+      "feature": "union_coverage_norm",
+      "real_mean": 0.30831127477014414,
+      "fake_mean": 0.2159116360322351,
+      "cohen_d_fake_minus_real": -1.7004575251432765,
+      "absolute_cohen_d": 1.7004575251432765
+    },
+    {
+      "scope": "Tables",
+      "feature_group": "quantity_only",
+      "feature": "mean_box_height_norm",
+      "real_mean": 0.04516875397433588,
+      "fake_mean": 0.029052869556861757,
+      "cohen_d_fake_minus_real": -1.6666708274847093,
+      "absolute_cohen_d": 1.6666708274847093
+    },
+    {
+      "scope": "Tables",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "mean_box_height_norm",
+      "real_mean": 0.04516875397433588,
+      "fake_mean": 0.029052869556861757,
+      "cohen_d_fake_minus_real": -1.6666708274847093,
+      "absolute_cohen_d": 1.6666708274847093
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "center_y_span",
+      "real_mean": 0.8486447749508451,
+      "fake_mean": 0.9437085929795007,
+      "cohen_d_fake_minus_real": 1.5564793774505832,
+      "absolute_cohen_d": 1.5564793774505832
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "arrangement_only",
+      "feature": "center_y_span",
+      "real_mean": 0.8486447749508451,
+      "fake_mean": 0.9437085929795007,
+      "cohen_d_fake_minus_real": 1.5564793774505832,
+      "absolute_cohen_d": 1.5564793774505832
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_only",
+      "feature": "mean_box_area_norm",
+      "real_mean": 0.0016848854796388598,
+      "fake_mean": 0.001162802388532416,
+      "cohen_d_fake_minus_real": -1.4403384984201608,
+      "absolute_cohen_d": 1.4403384984201608
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "mean_box_area_norm",
+      "real_mean": 0.0016848854796388598,
+      "fake_mean": 0.001162802388532416,
+      "cohen_d_fake_minus_real": -1.4403384984201608,
+      "absolute_cohen_d": 1.4403384984201608
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_only",
+      "feature": "mean_box_height_norm",
+      "real_mean": 0.023754615910391495,
+      "fake_mean": 0.019974625499987634,
+      "cohen_d_fake_minus_real": -1.355021579386763,
+      "absolute_cohen_d": 1.355021579386763
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "mean_box_height_norm",
+      "real_mean": 0.023754615910391495,
+      "fake_mean": 0.019974625499987634,
+      "cohen_d_fake_minus_real": -1.355021579386763,
+      "absolute_cohen_d": 1.355021579386763
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "arrangement_only",
+      "feature": "center_y_mean",
+      "real_mean": 0.44021100939779406,
+      "fake_mean": 0.5137953931962712,
+      "cohen_d_fake_minus_real": 1.289422339127663,
+      "absolute_cohen_d": 1.289422339127663
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "center_y_mean",
+      "real_mean": 0.44021100939779406,
+      "fake_mean": 0.5137953931962712,
+      "cohen_d_fake_minus_real": 1.289422339127663,
+      "absolute_cohen_d": 1.289422339127663
+    },
+    {
+      "scope": "Tables",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "mean_confidence",
+      "real_mean": 0.8866486111933742,
+      "fake_mean": 0.9088352166040188,
+      "cohen_d_fake_minus_real": 1.213566670996024,
+      "absolute_cohen_d": 1.213566670996024
+    },
+    {
+      "scope": "Tables",
+      "feature_group": "quantity_only",
+      "feature": "mean_confidence",
+      "real_mean": 0.8866486111933742,
+      "fake_mean": 0.9088352166040188,
+      "cohen_d_fake_minus_real": 1.213566670996024,
+      "absolute_cohen_d": 1.213566670996024
+    }
+  ],
+  "density_match_summary": [
+    {
+      "index": 0,
+      "category": "AcademicPosters",
+      "pairs": 25,
+      "mean_abs_count_difference": 1.76,
+      "median_abs_count_difference": 1.0,
+      "max_abs_count_difference": 9
+    },
+    {
+      "index": 1,
+      "category": "CommercialPosters",
+      "pairs": 9,
+      "mean_abs_count_difference": 2.4444444444444446,
+      "median_abs_count_difference": 0.0,
+      "max_abs_count_difference": 9
+    },
+    {
+      "index": 2,
+      "category": "InfographicCharts",
+      "pairs": 27,
+      "mean_abs_count_difference": 1.1851851851851851,
+      "median_abs_count_difference": 1.0,
+      "max_abs_count_difference": 6
+    },
+    {
+      "index": 3,
+      "category": "Receipts",
+      "pairs": 32,
+      "mean_abs_count_difference": 1.40625,
+      "median_abs_count_difference": 1.0,
+      "max_abs_count_difference": 7
+    },
+    {
+      "index": 4,
+      "category": "Tables",
+      "pairs": 26,
+      "mean_abs_count_difference": 2.1153846153846154,
+      "median_abs_count_difference": 1.0,
+      "max_abs_count_difference": 10
+    },
+    {
+      "index": 5,
+      "category": "UIScreenshots",
+      "pairs": 15,
+      "mean_abs_count_difference": 1.7333333333333334,
+      "median_abs_count_difference": 1.0,
+      "max_abs_count_difference": 9
+    }
+  ],
+  "caveat": "This is a feasibility pilot, not a final performance estimate or detector-accuracy benchmark."
+}

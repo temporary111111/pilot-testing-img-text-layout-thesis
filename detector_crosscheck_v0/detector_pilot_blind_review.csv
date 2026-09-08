@@ -1,0 +1,25 @@
+pilot_id,relative_path
+DVP_001_00009dcb92a2,Data/Tables/0_real/PMC3361340_table_0.jpg
+DVP_002_00095f59a74b,Data/Receipts/1_fake/receipt_0609.png
+DVP_003_000cc7e882fa,Data/AcademicPosters/1_fake/academic_poster_0823.png
+DVP_004_000f693d4a62,Data/UIScreenshots/1_fake/ui_0844.png
+DVP_005_001093bb82c1,Data/CommercialPosters/1_fake/commercial_poster_0332.png
+DVP_006_001b9f70299d,Data/UIScreenshots/1_fake/ui_0850.png
+DVP_007_0020f18400cc,Data/UIScreenshots/0_real/3942.jpg
+DVP_008_002425e25739,Data/InfographicCharts/1_fake/infographic_chart_0455.png
+DVP_009_002812010de4,Data/InfographicCharts/1_fake/infographic_chart_0373.png
+DVP_010_002cab38dc59,Data/AcademicPosters/1_fake/academic_poster_0393.png
+DVP_011_003f16df2207,Data/UIScreenshots/0_real/6011.jpg
+DVP_012_0042fe15d832,Data/InfographicCharts/0_real/00013316.jpeg
+DVP_013_004b61a8ee7f,Data/Tables/1_fake/table_0726.png
+DVP_014_00553172e64a,Data/Receipts/1_fake/receipt_0214.png
+DVP_015_0062f18128e1,Data/InfographicCharts/0_real/00000395.jpeg
+DVP_016_0067c7996c04,Data/CommercialPosters/0_real/5ecd32ca499b85dcc7980750_preview.jpg
+DVP_017_0071d7b81993,Data/CommercialPosters/1_fake/commercial_poster_0990.png
+DVP_018_0074132a6a8f,Data/Tables/1_fake/table_0293.png
+DVP_019_007a18897b6b,Data/Tables/0_real/PMC5664791_table_1.jpg
+DVP_020_00a25e8951c0,Data/AcademicPosters/0_real/NeurIPS_2022_54176_Streaming Radiance Fields for 3D Video Synthesis.png
+DVP_021_00b8efaf230b,Data/Receipts/0_real/X51007339118.jpg
+DVP_022_00c49d3e5261,Data/AcademicPosters/0_real/ICLR_2022_6636_Map Induction_ Compositional spatial submap learning for eff.png
+DVP_023_00c60ed30745,Data/Receipts/0_real/X51005715006.jpg
+DVP_024_0118f3cf4061,Data/CommercialPosters/0_real/5a6f2b1d8c32ec6f8bc5567e_preview.jpg

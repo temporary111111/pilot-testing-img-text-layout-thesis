@@ -1,5 +1,10 @@
 # AI Handoff: Thesis Proposal Context
 
+> Read `CONTINUE_HERE.md` first. It records the latest category-focused direction,
+> artifact map, and corrections to overstrong interpretations below. Historical
+> quantity-only scores include confidence; count matching is not full density
+> control; universal cross-category transfer is not a thesis success requirement.
+
 ## Purpose of this file
 
 This file preserves the working context of the thesis discussion so it can be given to another AI assistant or used in a future chat. Read this file together with the original proposal before continuing the work.
@@ -109,6 +114,17 @@ This existing project state supersedes the earlier provisional PP-OCRv5 recommen
 
 The existing OCR audit confirms technical validity of the polygons (four vertices, finite coordinates, in bounds), but this does **not** prove that the polygons are semantically perfect human ground truth. Visual overlay review and/or a manual annotation check may still be useful if the research question requires box-level accuracy evidence.
 
+A read-only visual inspection of five available T004 overlays (academic poster, table, receipt, commercial poster, and UI screenshot) found no obvious gross box failures in those samples. Text-line regions were generally tightly outlined, and one rotated UI word was represented with a visibly rotated quadrilateral. This is only an informal 5-image check; it is not a formal OCR accuracy measurement and should not be reported as one.
+
+## Audit finding about the frozen layout features
+
+The existing implementation has an important distinction:
+
+- **B2** rasterizes the original quadrilateral polygons into a 64×64 binary map, so it retains approximate polygon shape and position.
+- **B1** computes several size/shape statistics from an **axis-aligned bounding box** around each polygon (`box_quantities()`), including width, height, area, and aspect ratio. These B1 features can lose or distort rotation information for slanted text even when the OCR polygon itself is accurate.
+
+This is not automatically an error because the current study is about page-level layout and B1/B2 were frozen as `LAYOUT_FEATURES_V1`. However, it is a methodological limitation relevant to the original concern about slanted text. Do not silently add rotation-aware B1 features or regenerate frozen artifacts. If orientation becomes a required research variable, create a separately versioned representation and obtain an explicit research decision.
+
 ## Suggested OCR output schema
 
 For every detected region, save at least:
@@ -181,3 +197,36 @@ Do not assume that the thesis premise is already validated. Help the group desig
 3. semantic text information, which is intentionally excluded.
 
 When recommending tools or models, prioritize polygon/rotated-box geometry, reproducibility, fixed settings, visual inspection, and measurable validation. Do not claim that the combined visual-layout model must outperform the visual-only model.
+
+## Independent audit added
+
+An independent methodology audit was created at:
+
+`C:\Users\dev\desktop\feasibility-testing-thesis\PREVIOUS_WORK_METHODOLOGY_AUDIT.md`
+
+Its main conclusion is that the existing engineering foundation can be preserved, but the layout hypothesis is **not yet validated**. The highest-priority risks are OCR accuracy versus mere technical success, confounding of spatial arrangement with text quantity and OCR segmentation, strongly imbalanced global density groups by category/class, and loss of rotation information in B1 axis-aligned features. The recommended sequence is OCR-quality audit → quantity/arrangement ablations → category/density robustness checks → visual/fusion experiments.
+## Fresh detector pilot started
+
+To avoid relying on the previous derived artifacts, a new independent manifest was created directly from raw TextRich data:
+
+- `C:\Users\dev\desktop\feasibility-testing-thesis\detector_pilot_v0\detector_pilot_manifest.csv` — 120 images, 10 per category × label cell;
+- `C:\Users\dev\desktop\feasibility-testing-thesis\detector_pilot_v0\detector_pilot_blind_review.csv` — same images without labels for manual review;
+- `C:\Users\dev\desktop\feasibility-testing-thesis\detector_crosscheck_v0\` — completed 24-image PP-OCRv5/PP-OCRv6 cross-check.
+
+Both detectors succeeded technically on 24/24 cross-check images. Their polygon counts differed, but normalized polygon-union coverage was close on most images. Visual inspection showed that the main difference is often segmentation granularity (word-level versus line-level), with occasional UI/decorative elements detected as text-like regions. This means occupancy-map geometry may be more stable than raw region count, but detector choice is not finalized until manual review.
+
+## Hardware note
+
+The host PC has an **NVIDIA GeForce RTX 3050 Laptop GPU with 4 GB VRAM** and an integrated AMD Radeon GPU. `nvidia-smi` reports an NVIDIA driver with CUDA 13.0 support. The existing `.venv-ocr` currently contains a CPU-only Paddle build (`paddle 3.3.1`, `compiled_with_cuda=False`, active device `cpu`). A separate `.venv-ocr-gpu` environment was created for the validated GPU runs described below.
+
+## GPU validation and feature pilot update
+
+The separate `.venv-ocr-gpu` environment uses PaddlePaddle 3.3.0 GPU. A 24-image CPU/GPU cross-check matched region counts on every image; PP-OCRv5 polygon coordinates were identical, and PP-OCRv6 differed by at most 2 pixels with negligible normalized coverage differences. The validation details are in `GPU_CPU_DETECTOR_VALIDATION.md`.
+
+The full fresh 120-image PP-OCRv5 GPU run completed 120/120 successfully. Its outputs are in `detector_pilot_gpu_v0`. The run contains 8,617 valid polygons across 60 real and 60 generated images, balanced at 10 images per category-label cell.
+
+The first feature pilot is in `feature_pilot_v0`. It separates quantity/density features from arrangement features and evaluates them with a 5-fold stratified nearest-centroid baseline. Pooled balanced accuracy was 0.700 for quantity-only, 0.667 for arrangement-only, and 0.708 for the combined group. These values are feasibility signals only: density overlap is limited in the 120-image sample, and within-category sample sizes are 10 per class. The next experiment should expand the sample and enforce stronger density overlap before treating arrangement as an independent signal.
+
+The expanded feature pilot is in `feature_pilot_expanded_v0`. It uses 600 images (50 per category-label cell), 42,642 valid polygons, and no missing or infinite feature values after fixing duplicate-centroid distance handling. Full-sample pooled balanced accuracy was 0.720 quantity-only, 0.670 arrangement-only, and 0.733 combined. After greedy within-category count matching, arrangement-only fell to 0.571 for pairs with region-count difference <=10 and 0.605 for difference <=20, while quantity-only remained 0.770 and 0.744. This is evidence that the initial arrangement signal is substantially confounded by text quantity and category-specific structure. The current thesis claim should remain unvalidated; consider a category-conditional scope or a redesigned arrangement representation with stricter source controls before investing in final architectures.
+
+An additional leave-one-category-out check was run on the expanded features. Mean balanced accuracy was 0.602 for arrangement-only, 0.678 for quantity-only, and 0.682 for the combined group. On the <=10 density-matched subset, arrangement-only was 0.461 and quantity-only 0.703; on the <=20 subset, arrangement-only was 0.488 and quantity-only 0.669. These generalization checks further weaken the claim of a universal arrangement-only signal across categories.

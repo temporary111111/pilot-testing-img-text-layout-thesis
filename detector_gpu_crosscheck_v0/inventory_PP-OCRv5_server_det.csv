@@ -1,0 +1,25 @@
+pilot_id,relative_path,status,error,image_width,image_height,num_regions,runtime_seconds
+DVP_001_00009dcb92a2,Data/Tables/0_real/PMC3361340_table_0.jpg,ok,,684,278,89,0.8942822000008164
+DVP_002_00095f59a74b,Data/Receipts/1_fake/receipt_0609.png,ok,,1023,1537,61,0.22844129999975848
+DVP_003_000cc7e882fa,Data/AcademicPosters/1_fake/academic_poster_0823.png,ok,,1402,1122,176,0.2843032000000676
+DVP_004_000f693d4a62,Data/UIScreenshots/1_fake/ui_0844.png,ok,,941,1672,64,0.21413100000063423
+DVP_005_001093bb82c1,Data/CommercialPosters/1_fake/commercial_poster_0332.png,ok,,1448,1086,32,0.2425589000013133
+DVP_006_001b9f70299d,Data/UIScreenshots/1_fake/ui_0850.png,ok,,941,1672,43,0.222019700000601
+DVP_007_0020f18400cc,Data/UIScreenshots/0_real/3942.jpg,ok,,1080,1920,8,0.18254659999911382
+DVP_008_002425e25739,Data/InfographicCharts/1_fake/infographic_chart_0455.png,ok,,1254,1254,37,0.33137860000169894
+DVP_009_002812010de4,Data/InfographicCharts/1_fake/infographic_chart_0373.png,ok,,1347,1167,57,0.2869805999998789
+DVP_010_002cab38dc59,Data/AcademicPosters/1_fake/academic_poster_0393.png,ok,,1402,1122,209,0.2875106000010419
+DVP_011_003f16df2207,Data/UIScreenshots/0_real/6011.jpg,ok,,1080,1920,44,0.19125030000031984
+DVP_012_0042fe15d832,Data/InfographicCharts/0_real/00013316.jpeg,ok,,1200,1200,30,0.34209220000047935
+DVP_013_004b61a8ee7f,Data/Tables/1_fake/table_0726.png,ok,,1402,1122,120,0.2701383999992686
+DVP_014_00553172e64a,Data/Receipts/1_fake/receipt_0214.png,ok,,1015,1549,69,0.21638919999895734
+DVP_015_0062f18128e1,Data/InfographicCharts/0_real/00000395.jpeg,ok,,1200,1200,57,0.3437442000013107
+DVP_016_0067c7996c04,Data/CommercialPosters/0_real/5ecd32ca499b85dcc7980750_preview.jpg,ok,,576,1024,3,0.18643019999944954
+DVP_017_0071d7b81993,Data/CommercialPosters/1_fake/commercial_poster_0990.png,ok,,1086,1448,31,0.24316879999969387
+DVP_018_0074132a6a8f,Data/Tables/1_fake/table_0293.png,ok,,1375,1144,78,0.2896571999990556
+DVP_019_007a18897b6b,Data/Tables/0_real/PMC5664791_table_1.jpg,ok,,685,261,54,0.1528785999998945
+DVP_020_00a25e8951c0,Data/AcademicPosters/0_real/NeurIPS_2022_54176_Streaming Radiance Fields for 3D Video Synthesis.png,ok,,4512,2208,148,0.24386200000117242
+DVP_021_00b8efaf230b,Data/Receipts/0_real/X51007339118.jpg,ok,,623,1399,49,0.19620190000023285
+DVP_022_00c49d3e5261,Data/AcademicPosters/0_real/ICLR_2022_6636_Map Induction_ Compositional spatial submap learning for eff.png,ok,,2044,2880,120,0.2547085000005609
+DVP_023_00c60ed30745,Data/Receipts/0_real/X51005715006.jpg,ok,,619,931,46,0.21458239999992657
+DVP_024_0118f3cf4061,Data/CommercialPosters/0_real/5a6f2b1d8c32ec6f8bc5567e_preview.jpg,ok,,1024,576,3,0.18808139999964624

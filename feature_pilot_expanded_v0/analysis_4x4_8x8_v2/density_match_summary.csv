@@ -1,0 +1,7 @@
+index,category,pairs,mean_abs_count_difference,median_abs_count_difference,max_abs_count_difference
+0,AcademicPosters,50,39.74,11.5,187
+1,CommercialPosters,50,22.38,23.0,50
+2,InfographicCharts,50,27.52,4.5,186
+3,Receipts,50,9.78,2.0,39
+4,Tables,50,42.36,9.0,343
+5,UIScreenshots,50,25.82,21.5,71

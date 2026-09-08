@@ -1,0 +1,347 @@
+{
+  "features": "C:\\Users\\dev\\Desktop\\feasibility-testing-thesis\\feature_pilot_expanded_v0\\layout_features.csv",
+  "images": 600,
+  "categories": [
+    "AcademicPosters",
+    "CommercialPosters",
+    "InfographicCharts",
+    "Receipts",
+    "Tables",
+    "UIScreenshots"
+  ],
+  "label_counts": {
+    "0": 300,
+    "1": 300
+  },
+  "feature_groups": {
+    "quantity_only": [
+      "region_count",
+      "union_coverage_norm",
+      "sum_box_area_norm",
+      "mean_box_area_norm",
+      "median_box_area_norm",
+      "std_box_area_norm",
+      "mean_box_width_norm",
+      "mean_box_height_norm",
+      "mean_confidence",
+      "low_confidence_fraction"
+    ],
+    "arrangement_only": [
+      "center_x_mean",
+      "center_x_std",
+      "center_y_mean",
+      "center_y_std",
+      "center_x_span",
+      "center_y_span",
+      "nearest_neighbor_mean_norm",
+      "nearest_neighbor_median_norm",
+      "nearest_neighbor_std_norm",
+      "pairwise_distance_mean_norm",
+      "pairwise_distance_std_norm",
+      "row_alignment_fraction",
+      "column_alignment_fraction",
+      "angle_mean_abs_deg",
+      "angle_std_deg",
+      "rotated_fraction_gt_5deg",
+      "center_grid_0_0",
+      "center_grid_0_1",
+      "center_grid_0_2",
+      "center_grid_0_3",
+      "center_grid_1_0",
+      "center_grid_1_1",
+      "center_grid_1_2",
+      "center_grid_1_3",
+      "center_grid_2_0",
+      "center_grid_2_1",
+      "center_grid_2_2",
+      "center_grid_2_3",
+      "center_grid_3_0",
+      "center_grid_3_1",
+      "center_grid_3_2",
+      "center_grid_3_3"
+    ],
+    "quantity_plus_arrangement": [
+      "region_count",
+      "union_coverage_norm",
+      "sum_box_area_norm",
+      "mean_box_area_norm",
+      "median_box_area_norm",
+      "std_box_area_norm",
+      "mean_box_width_norm",
+      "mean_box_height_norm",
+      "mean_confidence",
+      "low_confidence_fraction",
+      "center_x_mean",
+      "center_x_std",
+      "center_y_mean",
+      "center_y_std",
+      "center_x_span",
+      "center_y_span",
+      "nearest_neighbor_mean_norm",
+      "nearest_neighbor_median_norm",
+      "nearest_neighbor_std_norm",
+      "pairwise_distance_mean_norm",
+      "pairwise_distance_std_norm",
+      "row_alignment_fraction",
+      "column_alignment_fraction",
+      "angle_mean_abs_deg",
+      "angle_std_deg",
+      "rotated_fraction_gt_5deg",
+      "center_grid_0_0",
+      "center_grid_0_1",
+      "center_grid_0_2",
+      "center_grid_0_3",
+      "center_grid_1_0",
+      "center_grid_1_1",
+      "center_grid_1_2",
+      "center_grid_1_3",
+      "center_grid_2_0",
+      "center_grid_2_1",
+      "center_grid_2_2",
+      "center_grid_2_3",
+      "center_grid_3_0",
+      "center_grid_3_1",
+      "center_grid_3_2",
+      "center_grid_3_3"
+    ]
+  },
+  "cross_validation": "5-fold stratified nearest-centroid; standardization fitted within each training fold",
+  "pooled_cv_mean_balanced_accuracy": {
+    "quantity_only": 0.72,
+    "arrangement_only": 0.6700000000000002,
+    "quantity_plus_arrangement": 0.7333333333333334
+  },
+  "top_within_category_effects": [
+    {
+      "scope": "CommercialPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "region_count",
+      "real_mean": 7.52,
+      "fake_mean": 29.9,
+      "cohen_d_fake_minus_real": 3.049863454302263,
+      "absolute_cohen_d": 3.049863454302263
+    },
+    {
+      "scope": "CommercialPosters",
+      "feature_group": "quantity_only",
+      "feature": "region_count",
+      "real_mean": 7.52,
+      "fake_mean": 29.9,
+      "cohen_d_fake_minus_real": 3.049863454302263,
+      "absolute_cohen_d": 3.049863454302263
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "region_count",
+      "real_mean": 18.98,
+      "fake_mean": 44.72,
+      "cohen_d_fake_minus_real": 2.124544057140292,
+      "absolute_cohen_d": 2.124544057140292
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_only",
+      "feature": "region_count",
+      "real_mean": 18.98,
+      "fake_mean": 44.72,
+      "cohen_d_fake_minus_real": 2.124544057140292,
+      "absolute_cohen_d": 2.124544057140292
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_only",
+      "feature": "mean_confidence",
+      "real_mean": 0.8212293742739629,
+      "fake_mean": 0.8560892190642342,
+      "cohen_d_fake_minus_real": 2.0159608791286887,
+      "absolute_cohen_d": 2.0159608791286887
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "mean_confidence",
+      "real_mean": 0.8212293742739629,
+      "fake_mean": 0.8560892190642342,
+      "cohen_d_fake_minus_real": 2.0159608791286887,
+      "absolute_cohen_d": 2.0159608791286887
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "low_confidence_fraction",
+      "real_mean": 0.22233795222936997,
+      "fake_mean": 0.09881280867654522,
+      "cohen_d_fake_minus_real": -1.8564275132034411,
+      "absolute_cohen_d": 1.8564275132034411
+    },
+    {
+      "scope": "AcademicPosters",
+      "feature_group": "quantity_only",
+      "feature": "low_confidence_fraction",
+      "real_mean": 0.22233795222936997,
+      "fake_mean": 0.09881280867654522,
+      "cohen_d_fake_minus_real": -1.8564275132034411,
+      "absolute_cohen_d": 1.8564275132034411
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_only",
+      "feature": "mean_box_height_norm",
+      "real_mean": 0.025066562514760644,
+      "fake_mean": 0.018775905748530507,
+      "cohen_d_fake_minus_real": -1.7753946796358921,
+      "absolute_cohen_d": 1.7753946796358921
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "mean_box_height_norm",
+      "real_mean": 0.025066562514760644,
+      "fake_mean": 0.018775905748530507,
+      "cohen_d_fake_minus_real": -1.7753946796358921,
+      "absolute_cohen_d": 1.7753946796358921
+    },
+    {
+      "scope": "Tables",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "mean_box_height_norm",
+      "real_mean": 0.05149212138388466,
+      "fake_mean": 0.027675520229064485,
+      "cohen_d_fake_minus_real": -1.76360558379247,
+      "absolute_cohen_d": 1.76360558379247
+    },
+    {
+      "scope": "Tables",
+      "feature_group": "quantity_only",
+      "feature": "mean_box_height_norm",
+      "real_mean": 0.05149212138388466,
+      "fake_mean": 0.027675520229064485,
+      "cohen_d_fake_minus_real": -1.76360558379247,
+      "absolute_cohen_d": 1.76360558379247
+    },
+    {
+      "scope": "CommercialPosters",
+      "feature_group": "arrangement_only",
+      "feature": "nearest_neighbor_mean_norm",
+      "real_mean": 0.12149314163306975,
+      "fake_mean": 0.05222149670191834,
+      "cohen_d_fake_minus_real": -1.6643502466956324,
+      "absolute_cohen_d": 1.6643502466956324
+    },
+    {
+      "scope": "CommercialPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "nearest_neighbor_mean_norm",
+      "real_mean": 0.12149314163306975,
+      "fake_mean": 0.05222149670191834,
+      "cohen_d_fake_minus_real": -1.6643502466956324,
+      "absolute_cohen_d": 1.6643502466956324
+    },
+    {
+      "scope": "CommercialPosters",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "nearest_neighbor_median_norm",
+      "real_mean": 0.10186253185080191,
+      "fake_mean": 0.03775907253184247,
+      "cohen_d_fake_minus_real": -1.6095344823570115,
+      "absolute_cohen_d": 1.6095344823570115
+    },
+    {
+      "scope": "CommercialPosters",
+      "feature_group": "arrangement_only",
+      "feature": "nearest_neighbor_median_norm",
+      "real_mean": 0.10186253185080191,
+      "fake_mean": 0.03775907253184247,
+      "cohen_d_fake_minus_real": -1.6095344823570115,
+      "absolute_cohen_d": 1.6095344823570115
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "center_y_mean",
+      "real_mean": 0.37999533356380455,
+      "fake_mean": 0.5274749611792803,
+      "cohen_d_fake_minus_real": 1.5969101755692063,
+      "absolute_cohen_d": 1.5969101755692063
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "arrangement_only",
+      "feature": "center_y_mean",
+      "real_mean": 0.37999533356380455,
+      "fake_mean": 0.5274749611792803,
+      "cohen_d_fake_minus_real": 1.5969101755692063,
+      "absolute_cohen_d": 1.5969101755692063
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "arrangement_only",
+      "feature": "nearest_neighbor_mean_norm",
+      "real_mean": 0.11374150327336408,
+      "fake_mean": 0.07033246838205517,
+      "cohen_d_fake_minus_real": -1.541406874060403,
+      "absolute_cohen_d": 1.541406874060403
+    },
+    {
+      "scope": "UIScreenshots",
+      "feature_group": "quantity_plus_arrangement",
+      "feature": "nearest_neighbor_mean_norm",
+      "real_mean": 0.11374150327336408,
+      "fake_mean": 0.07033246838205517,
+      "cohen_d_fake_minus_real": -1.541406874060403,
+      "absolute_cohen_d": 1.541406874060403
+    }
+  ],
+  "density_match_summary": [
+    {
+      "index": 0,
+      "category": "AcademicPosters",
+      "pairs": 50,
+      "mean_abs_count_difference": 39.74,
+      "median_abs_count_difference": 11.5,
+      "max_abs_count_difference": 187
+    },
+    {
+      "index": 1,
+      "category": "CommercialPosters",
+      "pairs": 50,
+      "mean_abs_count_difference": 22.38,
+      "median_abs_count_difference": 23.0,
+      "max_abs_count_difference": 50
+    },
+    {
+      "index": 2,
+      "category": "InfographicCharts",
+      "pairs": 50,
+      "mean_abs_count_difference": 27.52,
+      "median_abs_count_difference": 4.5,
+      "max_abs_count_difference": 186
+    },
+    {
+      "index": 3,
+      "category": "Receipts",
+      "pairs": 50,
+      "mean_abs_count_difference": 9.78,
+      "median_abs_count_difference": 2.0,
+      "max_abs_count_difference": 39
+    },
+    {
+      "index": 4,
+      "category": "Tables",
+      "pairs": 50,
+      "mean_abs_count_difference": 42.36,
+      "median_abs_count_difference": 9.0,
+      "max_abs_count_difference": 343
+    },
+    {
+      "index": 5,
+      "category": "UIScreenshots",
+      "pairs": 50,
+      "mean_abs_count_difference": 25.82,
+      "median_abs_count_difference": 21.5,
+      "max_abs_count_difference": 71
+    }
+  ],
+  "caveat": "This is a feasibility pilot, not a final performance estimate or detector-accuracy benchmark."
+}

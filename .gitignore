@@ -1,0 +1,14 @@
+# Local environments, caches, editor state and credentials
+.venv*/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.codex/
+.env
+.env.*
+!.env.example
+# Raw images and regenerated visual overlays stay local.
+data/
+**/overlays/
+*.log

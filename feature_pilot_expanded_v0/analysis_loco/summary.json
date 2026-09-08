@@ -1,0 +1,11 @@
+{
+  "features": "C:\\Users\\dev\\Desktop\\feasibility-testing-thesis\\feature_pilot_expanded_v0\\layout_features.csv",
+  "images": 600,
+  "density_matching": null,
+  "mean_balanced_accuracy_by_feature_group": {
+    "arrangement_only": 0.6016666666666667,
+    "quantity_only": 0.6783333333333333,
+    "quantity_plus_arrangement": 0.6816666666666666
+  },
+  "caveat": "Leave-one-category-out is a generalization check, not a final model benchmark."
+}

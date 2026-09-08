@@ -1,0 +1,57 @@
+{
+  "script": "run_detector_pilot.py",
+  "manifest": "C:\\Users\\dev\\Desktop\\feasibility-testing-thesis\\detector_pilot_v0\\detector_pilot_manifest.csv",
+  "dataset_root": "C:\\Users\\dev\\Desktop\\text-rich-ai-image-detector\\data\\TextRich",
+  "models": [
+    "PP-OCRv5_server_det",
+    "PP-OCRv6_small_det"
+  ],
+  "engine": "paddle_static",
+  "device": "cpu",
+  "enable_mkldnn": false,
+  "recognition": false,
+  "python": "3.11.9",
+  "started_unix": 1788790400.9956372,
+  "model_fingerprints": [
+    {
+      "model_name": "PP-OCRv5_server_det",
+      "model_dir": "C:\\Users\\dev\\.paddlex\\official_models\\PP-OCRv5_server_det",
+      "files": {
+        "inference.json": {
+          "size": 402480,
+          "sha256": "af5876933d8806a1b50d895867e0781e135cd92ff37381992828fc8d1b842d28"
+        },
+        "inference.pdiparams": {
+          "size": 87932887,
+          "sha256": "183146fe9d9910352f68482f623bcbbb9fa7b9e8fa1463b9ad288cef00524d2d"
+        },
+        "inference.yml": {
+          "size": 903,
+          "sha256": "28fb721efc3634fc8aa677e474b9602cb815a91cf569ef357a7a553d7b3ce685"
+        },
+        "config.json": {
+          "size": 2871,
+          "sha256": "436bf19010fe3879477e8599a870a0ec8ccd14ca39056805ec4ed20ab318ec04"
+        }
+      }
+    },
+    {
+      "model_name": "PP-OCRv6_small_det",
+      "model_dir": "C:\\Users\\dev\\.paddlex\\official_models\\PP-OCRv6_small_det",
+      "files": {
+        "inference.json": {
+          "size": 229307,
+          "sha256": "89240f689a4a77aad75ef55a8df0a15c8e1d4980a327d17e58f24bbadde5aeab"
+        },
+        "inference.pdiparams": {
+          "size": 9817888,
+          "sha256": "5043d4ccc8d63402ccea8feefcee4db57077431a873e78d2191836a178a492da"
+        },
+        "inference.yml": {
+          "size": 885,
+          "sha256": "193f435274bf9f0b5f71a929bbfbcf148282df7e633b34e7c373e8f44741b516"
+        }
+      }
+    }
+  ]
+}

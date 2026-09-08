@@ -1,0 +1,5 @@
+﻿"pilot_id","relative_path","category","label","selection_score"
+"DVP_001_00009dcb92a2","Data/Tables/0_real/PMC3361340_table_0.jpg","Tables","0","00009dcb92a240c39f1ee189e4deea2ae3e8d647e62e9a805d439b290f771c87"
+"DVP_002_00095f59a74b","Data/Receipts/1_fake/receipt_0609.png","Receipts","1","00095f59a74b0b77e37a3ddd7832ed3b4702834b4470922b844929ca1ce86451"
+"DVP_003_000cc7e882fa","Data/AcademicPosters/1_fake/academic_poster_0823.png","AcademicPosters","1","000cc7e882fabdf7313a6fd6573c47d73063a1c2ef2aa2f2c6dfc5cf36d13d93"
+"DVP_004_000f693d4a62","Data/UIScreenshots/1_fake/ui_0844.png","UIScreenshots","1","000f693d4a62c690cc1e856d3ba95b1c5bfd60216b8960a020fc66396ec1cbc4"

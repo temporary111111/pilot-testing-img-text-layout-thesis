@@ -1,0 +1,5 @@
+pilot_id,relative_path,status,error,image_width,image_height,num_regions,runtime_seconds
+DVP_001_00009dcb92a2,Data/Tables/0_real/PMC3361340_table_0.jpg,ok,,684,278,89,3.9949577000006684
+DVP_002_00095f59a74b,Data/Receipts/1_fake/receipt_0609.png,ok,,1023,1537,61,0.2464285000005475
+DVP_003_000cc7e882fa,Data/AcademicPosters/1_fake/academic_poster_0823.png,ok,,1402,1122,176,0.29656450000038603
+DVP_004_000f693d4a62,Data/UIScreenshots/1_fake/ui_0844.png,ok,,941,1672,64,0.2649445000006381

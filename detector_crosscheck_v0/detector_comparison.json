@@ -1,0 +1,230 @@
+{
+  "model_a": "PP-OCRv5_server_det",
+  "model_b": "PP-OCRv6_small_det",
+  "images": 24,
+  "mean_regions_a": 67.83333333333333,
+  "mean_regions_b": 64.58333333333333,
+  "mean_union_area_a_norm": 0.21949523909453375,
+  "mean_union_area_b_norm": 0.22124933022143037,
+  "mean_matches_iou_0_25": 60.916666666666664,
+  "mean_matches_iou_0_50": 59.666666666666664,
+  "note": "Agreement is a robustness signal, not a ground-truth accuracy measure.",
+  "per_image": [
+    {
+      "pilot_id": "DVP_001_00009dcb92a2",
+      "regions_a": 89,
+      "regions_b": 89,
+      "union_area_a_norm": 0.24967657452984982,
+      "union_area_b_norm": 0.291741399291702,
+      "matches_iou_0_25": 89,
+      "matches_iou_0_50": 89
+    },
+    {
+      "pilot_id": "DVP_002_00095f59a74b",
+      "regions_a": 61,
+      "regions_b": 57,
+      "union_area_a_norm": 0.23476373913967047,
+      "union_area_b_norm": 0.256361970069024,
+      "matches_iou_0_25": 56,
+      "matches_iou_0_50": 55
+    },
+    {
+      "pilot_id": "DVP_003_000cc7e882fa",
+      "regions_a": 176,
+      "regions_b": 173,
+      "union_area_a_norm": 0.2533575594654573,
+      "union_area_b_norm": 0.2472522524257154,
+      "matches_iou_0_25": 170,
+      "matches_iou_0_50": 168
+    },
+    {
+      "pilot_id": "DVP_004_000f693d4a62",
+      "regions_a": 64,
+      "regions_b": 67,
+      "union_area_a_norm": 0.1437311442915084,
+      "union_area_b_norm": 0.1354912950185337,
+      "matches_iou_0_25": 61,
+      "matches_iou_0_50": 61
+    },
+    {
+      "pilot_id": "DVP_005_001093bb82c1",
+      "regions_a": 32,
+      "regions_b": 24,
+      "union_area_a_norm": 0.13436390321825747,
+      "union_area_b_norm": 0.1394916338532605,
+      "matches_iou_0_25": 22,
+      "matches_iou_0_50": 21
+    },
+    {
+      "pilot_id": "DVP_006_001b9f70299d",
+      "regions_a": 43,
+      "regions_b": 47,
+      "union_area_a_norm": 0.09875216522854814,
+      "union_area_b_norm": 0.09780098104925183,
+      "matches_iou_0_25": 41,
+      "matches_iou_0_50": 40
+    },
+    {
+      "pilot_id": "DVP_007_0020f18400cc",
+      "regions_a": 8,
+      "regions_b": 16,
+      "union_area_a_norm": 0.042338927469135805,
+      "union_area_b_norm": 0.053134645061728394,
+      "matches_iou_0_25": 8,
+      "matches_iou_0_50": 8
+    },
+    {
+      "pilot_id": "DVP_008_002425e25739",
+      "regions_a": 37,
+      "regions_b": 33,
+      "union_area_a_norm": 0.22591816713337293,
+      "union_area_b_norm": 0.22042732792543923,
+      "matches_iou_0_25": 31,
+      "matches_iou_0_50": 29
+    },
+    {
+      "pilot_id": "DVP_009_002812010de4",
+      "regions_a": 57,
+      "regions_b": 49,
+      "union_area_a_norm": 0.1925071996610577,
+      "union_area_b_norm": 0.17125332946552338,
+      "matches_iou_0_25": 47,
+      "matches_iou_0_50": 45
+    },
+    {
+      "pilot_id": "DVP_010_002cab38dc59",
+      "regions_a": 209,
+      "regions_b": 211,
+      "union_area_a_norm": 0.21165404842378588,
+      "union_area_b_norm": 0.2164794472275333,
+      "matches_iou_0_25": 198,
+      "matches_iou_0_50": 197
+    },
+    {
+      "pilot_id": "DVP_011_003f16df2207",
+      "regions_a": 44,
+      "regions_b": 49,
+      "union_area_a_norm": 0.15562727974186308,
+      "union_area_b_norm": 0.15433833456429386,
+      "matches_iou_0_25": 44,
+      "matches_iou_0_50": 44
+    },
+    {
+      "pilot_id": "DVP_012_0042fe15d832",
+      "regions_a": 30,
+      "regions_b": 22,
+      "union_area_a_norm": 0.3562454231207793,
+      "union_area_b_norm": 0.33306477314814814,
+      "matches_iou_0_25": 22,
+      "matches_iou_0_50": 20
+    },
+    {
+      "pilot_id": "DVP_013_004b61a8ee7f",
+      "regions_a": 120,
+      "regions_b": 120,
+      "union_area_a_norm": 0.3488862994296409,
+      "union_area_b_norm": 0.40442320748815674,
+      "matches_iou_0_25": 120,
+      "matches_iou_0_50": 117
+    },
+    {
+      "pilot_id": "DVP_014_00553172e64a",
+      "regions_a": 69,
+      "regions_b": 65,
+      "union_area_a_norm": 0.23290125203929438,
+      "union_area_b_norm": 0.24236350920307198,
+      "matches_iou_0_25": 65,
+      "matches_iou_0_50": 64
+    },
+    {
+      "pilot_id": "DVP_015_0062f18128e1",
+      "regions_a": 57,
+      "regions_b": 25,
+      "union_area_a_norm": 0.24100422463119922,
+      "union_area_b_norm": 0.2658395825534107,
+      "matches_iou_0_25": 23,
+      "matches_iou_0_50": 18
+    },
+    {
+      "pilot_id": "DVP_016_0067c7996c04",
+      "regions_a": 3,
+      "regions_b": 3,
+      "union_area_a_norm": 0.09849770370314384,
+      "union_area_b_norm": 0.10889828804160442,
+      "matches_iou_0_25": 3,
+      "matches_iou_0_50": 3
+    },
+    {
+      "pilot_id": "DVP_017_0071d7b81993",
+      "regions_a": 31,
+      "regions_b": 29,
+      "union_area_a_norm": 0.16524125484570068,
+      "union_area_b_norm": 0.17288913138589584,
+      "matches_iou_0_25": 28,
+      "matches_iou_0_50": 27
+    },
+    {
+      "pilot_id": "DVP_018_0074132a6a8f",
+      "regions_a": 78,
+      "regions_b": 79,
+      "union_area_a_norm": 0.3384477516621188,
+      "union_area_b_norm": 0.3054946495157132,
+      "matches_iou_0_25": 78,
+      "matches_iou_0_50": 78
+    },
+    {
+      "pilot_id": "DVP_019_007a18897b6b",
+      "regions_a": 54,
+      "regions_b": 56,
+      "union_area_a_norm": 0.2912701235523842,
+      "union_area_b_norm": 0.26841512550989016,
+      "matches_iou_0_25": 54,
+      "matches_iou_0_50": 53
+    },
+    {
+      "pilot_id": "DVP_020_00a25e8951c0",
+      "regions_a": 148,
+      "regions_b": 125,
+      "union_area_a_norm": 0.23385065561904336,
+      "union_area_b_norm": 0.217302033559324,
+      "matches_iou_0_25": 108,
+      "matches_iou_0_50": 104
+    },
+    {
+      "pilot_id": "DVP_021_00b8efaf230b",
+      "regions_a": 49,
+      "regions_b": 46,
+      "union_area_a_norm": 0.2703405532376061,
+      "union_area_b_norm": 0.26888715948716846,
+      "matches_iou_0_25": 45,
+      "matches_iou_0_50": 45
+    },
+    {
+      "pilot_id": "DVP_022_00c49d3e5261",
+      "regions_a": 120,
+      "regions_b": 117,
+      "union_area_a_norm": 0.3202170872754479,
+      "union_area_b_norm": 0.3079632617675656,
+      "matches_iou_0_25": 103,
+      "matches_iou_0_50": 101
+    },
+    {
+      "pilot_id": "DVP_023_00c60ed30745",
+      "regions_a": 46,
+      "regions_b": 46,
+      "union_area_a_norm": 0.31196124398233066,
+      "union_area_b_norm": 0.2944772501297092,
+      "matches_iou_0_25": 44,
+      "matches_iou_0_50": 43
+    },
+    {
+      "pilot_id": "DVP_024_0118f3cf4061",
+      "regions_a": 3,
+      "regions_b": 2,
+      "union_area_a_norm": 0.11633145686761519,
+      "union_area_b_norm": 0.13619333757266372,
+      "matches_iou_0_25": 2,
+      "matches_iou_0_50": 2
+    }
+  ]
+}
