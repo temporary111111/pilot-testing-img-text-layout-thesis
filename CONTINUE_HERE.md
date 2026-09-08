@@ -111,6 +111,13 @@ fixed paired/grouped folds; repeated split sensitivity and permutation checks.
 Validate schema and feature calculations before reporting stronger conclusions.
 Do not keep adding representations just to obtain better scores.
 
+The current manual focus is `UIScreenshots`. `manual_audit_ui_v0` contains all 100
+UI original images, all 100 local PP-OCRv5 overlays, a label-blind `blind_review.csv`,
+`answer_key.csv`, and `RATING_GUIDE.md`. Review all 100 overlays first; then select
+20–30 representative/difficult images for exact quadrilateral ground truth. The
+blind CSV intentionally omits `relative_path` because raw paths reveal `0_real` or
+`1_fake`. Its local image and overlay paths point to the copied audit folders.
+
 ## Reproduction of the latest historical sensitivity analysis
 
 From this repo with NumPy, pandas and Shapely installed:

@@ -230,3 +230,10 @@ The first feature pilot is in `feature_pilot_v0`. It separates quantity/density 
 The expanded feature pilot is in `feature_pilot_expanded_v0`. It uses 600 images (50 per category-label cell), 42,642 valid polygons, and no missing or infinite feature values after fixing duplicate-centroid distance handling. Full-sample pooled balanced accuracy was 0.720 quantity-only, 0.670 arrangement-only, and 0.733 combined. After greedy within-category count matching, arrangement-only fell to 0.571 for pairs with region-count difference <=10 and 0.605 for difference <=20, while quantity-only remained 0.770 and 0.744. This is evidence that the initial arrangement signal is substantially confounded by text quantity and category-specific structure. The current thesis claim should remain unvalidated; consider a category-conditional scope or a redesigned arrangement representation with stricter source controls before investing in final architectures.
 
 An additional leave-one-category-out check was run on the expanded features. Mean balanced accuracy was 0.602 for arrangement-only, 0.678 for quantity-only, and 0.682 for the combined group. On the <=10 density-matched subset, arrangement-only was 0.461 and quantity-only 0.703; on the <=20 subset, arrangement-only was 0.488 and quantity-only 0.669. These generalization checks further weaken the claim of a universal arrangement-only signal across categories.
+
+The current manual audit focus is `manual_audit_ui_v0`, which contains all 100 UI
+original images and local PP-OCRv5 overlays, a label-blind `blind_review.csv`, an
+`answer_key.csv`, and `RATING_GUIDE.md`. Review all 100 overlays before opening the
+answer key. This package exists because UI is a promising category for testing text
+alignment and repeated component spacing, but icons, status-bar symbols, source
+templates and low-contrast text remain detector-quality risks.
